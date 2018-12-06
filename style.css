@@ -1,10 +1,16 @@
-html {
-  scroll-behavior: smooth;
+/*Container 0*/
+.container0 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
 }
+/*Container 1*/
 .container1 {
   padding-top: 100px;
   width: 900px;
-  height: 800px;
+  height: 80vh;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
 }
@@ -44,7 +50,6 @@ ul {
   text-align: center;
   font-size: 15px;
   padding: 10px;
-  /*margin: 10px;*/
   box-shadow: 1px 2px 3px lightgrey;
   font-family: 'Gloria Hallelujah', cursive;
 }
@@ -64,42 +69,29 @@ figure.pic1 {
   -webkit-transform: scale(1.1,1.1);
   z-index: 20;
 }
-.btn-light {
-  margin-left: 140px;
-  margin-top: 50px;
+.btn-see-more {
+/*  margin-left: 140px;
+  margin-top: 50px;*/
   font-family: 'Open Sans', sans-serif;
-}
-.container2 {
-  padding-top: 100px;
+  text-align: center;
   width: 900px;
-  height: 100%;
+  margin: 0 auto;
+}
+/*Container 2*/
+.container2 {
+  padding-top: 80px;
+  width: 900px;
+  height: 85vh;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
 }
 .container2 h1 {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   text-align: center;
-}
-
-
-
-
-
-
-/*
-body {
-  font-family: 'Ubuntu', sans-serif;
-  width:960px;
-}*/
-
-p{
-  color:#525252;
-  font-size:12px;
 }
 .Count:after{
   content:"%"
 }
-
 .skillbar {
   position:relative;
   display:block;
@@ -121,7 +113,6 @@ p{
   -o-transition-property:width, background-color;
   transition-property:width, background-color;
 }
-
 .skillbar-title {
   position:absolute;
   top:0;
@@ -138,7 +129,6 @@ p{
   border-top-left-radius:3px;
   border-bottom-left-radius:3px;
 }
-
 .skillbar-title span {
   display:block;
   background:rgba(0, 0, 0, 0.1);
@@ -152,7 +142,6 @@ p{
   border-top-left-radius:3px;
   border-bottom-left-radius:3px;
 }
-
 .skillbar-bar {
   height:35px;
   width:0px;
@@ -161,7 +150,6 @@ p{
   -moz-border-radius:3px;
   -webkit-border-radius:3px;
 }
-
 .skill-bar-percent {
   position:absolute;
   right:10px;
@@ -171,4 +159,19 @@ p{
   line-height:35px;
   color:#ffffff;
   color:rgba(0, 0, 0, 0.4);
+}
+.btn-get-in-touch {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+/*Container 3*/
+.container3 {
+  padding-top: 100px;
+  width: 900px;
+  height: 100vh;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
 }
