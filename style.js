@@ -41,13 +41,11 @@ $('.Count').each(function () {
 });
 });
 
-
 $("#contactForm").submit(function(event){
     // cancels the form submission
     event.preventDefault();
     submitForm();
 });
-
 function submitForm(){
     // Initiate Variables With Form Content
     var name = $("#name").val();
@@ -56,7 +54,7 @@ function submitForm(){
 
     $.ajax({
         type: "POST",
-        url: "contact.php",
+        url: "php/form-process.php",
         data: "name=" + name + "&email=" + email + "&message=" + message,
         success : function(text){
             if (text == "success"){
@@ -65,6 +63,6 @@ function submitForm(){
         }
     });
 }
-// function formSuccess(){
-//     $( "#msgSubmit" ).removeClass( "hidden" );
-// }
+function formSuccess(){
+    $( "#msgSubmit" ).removeClass( "hidden" );
+}

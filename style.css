@@ -206,3 +206,8 @@ figure.pic1 {
   padding-bottom: 50px;
   text-align: center;
 }
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
