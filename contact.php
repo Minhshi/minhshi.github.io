@@ -42,7 +42,7 @@ $from = "ContactForm";
 $headers = "From:" . $from . "\r\n";
 $headers .= "Content-type: text/plain; charset=UTF-8" . "\r\n";
 
-if (@mail($to, $subject, $message, $headers)) {
+if (mail($to, $subject, $message, $headers)) {
     echo "success";
 } else {
     echo "invalid";
