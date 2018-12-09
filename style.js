@@ -65,6 +65,6 @@ function submitForm(){
         }
     });
 }
-function formSuccess(){
-    $( "#msgSubmit" ).removeClass( "hidden" );
-}
+// function formSuccess(){
+//     $( "#msgSubmit" ).removeClass( "hidden" );
+// }
