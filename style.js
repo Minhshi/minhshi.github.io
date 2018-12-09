@@ -68,6 +68,8 @@ $('.Count').each(function () {
 // }
 
 // $(document).ready(funcion(){
+
+
 $("#contactform").submit(function (e) {
     e.preventDefault();
     var name = $("#cf-name").val();
