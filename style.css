@@ -1,5 +1,5 @@
 /*Container 0*/
-.container0 {
+.container {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -10,7 +10,7 @@
 .container1 {
   padding-top: 100px;
   width: 900px;
-  height: 80vh;
+  /*height: 80vh;*/
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
 }
@@ -70,8 +70,9 @@ figure.pic1 {
   z-index: 20;
 }
 .btn-see-more {
-/*  margin-left: 140px;
-  margin-top: 50px;*/
+  /*margin-left: 140px;*/
+  /*margin-top: 50px;*/
+  padding-top: 50px;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   width: 900px;
@@ -95,7 +96,7 @@ figure.pic1 {
 .skillbar {
   position:relative;
   display:block;
-  margin-bottom:15px;
+  margin-bottom:7px;
   width:100%;
   background:#eee;
   height:35px;
@@ -160,18 +161,48 @@ figure.pic1 {
   color:#ffffff;
   color:rgba(0, 0, 0, 0.4);
 }
-.btn-get-in-touch {
+.btn-see-projects {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   width: 900px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 15px;
 }
 /*Container 3*/
 .container3 {
-  padding-top: 100px;
+  padding-top: 80px;
   width: 900px;
-  height: 100vh;
+  height: 85vh;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
+}
+.container3 h1 {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.card-title {
+  font-weight: bold;
+}
+.card-text span {
+  color: #E91E63;
+  font-weight: bold;
+}
+.btn-say-hello {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+/*Container 4*/
+.container4 {
+  padding-top: 80px;
+  width: 900px;
+  height: 85vh;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+}
+.container4 h1 {
+  padding-bottom: 50px;
+  text-align: center;
 }

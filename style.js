@@ -5,6 +5,20 @@ $(function() {
   });
 });
 
+$(function() {
+  $('.see-projects').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $('.container3').offset().top}, 500, 'linear');
+  });
+});
+
+$(function() {
+  $('.say-hello').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $('.container4').offset().top}, 500, 'linear');
+  });
+});
+
 $(document).ready(function(){
   $('.skillbar').each(function(){
     $(this).find('.skillbar-bar').animate({
@@ -27,3 +41,30 @@ $('.Count').each(function () {
 });
 });
 
+
+$("#contactForm").submit(function(event){
+    // cancels the form submission
+    event.preventDefault();
+    submitForm();
+});
+
+function submitForm(){
+    // Initiate Variables With Form Content
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
+
+    $.ajax({
+        type: "POST",
+        url: "contact.php",
+        data: "name=" + name + "&email=" + email + "&message=" + message,
+        success : function(text){
+            if (text == "success"){
+                formSuccess();
+            }
+        }
+    });
+}
+function formSuccess(){
+    $( "#msgSubmit" ).removeClass( "hidden" );
+}
