@@ -218,6 +218,9 @@ figure.pic1 {
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
 }
+.page-footer {
+  padding: .5rem 1rem;
+}
 .footer-links {
   text-align: center;
 }
