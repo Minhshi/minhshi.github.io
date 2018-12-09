@@ -1,51 +1,16 @@
 <?php
-// $name = $_POST["name"];
-// $email = $_POST["email"];
-// $message = $_POST["message"];
 
-// $EmailTo = "hello@minhpham.me";
-// $Subject = "New Message Received";
+if (isset($_POST['submit'])) {
+  $name = $_POST['name'];
+  $subject = $_POST['subject'];
+  $mailFrom = $_POST['email'];
+  $message = $_POST['message'];
 
-// // prepare email body text
-// $Body .= "Name: ";
-// $Body .= $name;
-// $Body .= "\n";
+  $mailTo = "hello@minhpham.me";
+  $headers = "From: " . $mailFrom;
+  $txt = "You have received an email from " . $name . ".\n\n" . $message;
 
-// $Body .= "Email: ";
-// $Body .= $email;
-// $Body .= "\n";
+  mail($mailTo, $subject, $txt, $headers);
+  header("Location: index.php?mailsend");
 
-// $Body .= "Message: ";
-// $Body .= $message;
-// $Body .= "\n";
-
-// // send email
-// $success = mail($EmailTo, $Subject, $Body, "From:".$email);
-
-// // redirect to success page
-// if ($success){
-//    echo "success";
-// }else{
-//     echo "invalid";
-// }
-
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-
-$to = "hello@minhpham.me";
-$subject = "New Email Subscriber";
-$message = " Name: " . $name . "\r\n\r\n Email: " . $email . "\r\n\r\n Message: " . $message;
-
-
-$from = "ContactForm";
-$headers = "From:" . $from . "\r\n";
-$headers .= "Content-type: text/plain; charset=UTF-8" . "\r\n";
-
-if (mail($to, $subject, $message, $headers)) {
-    echo "success";
-} else {
-    echo "invalid";
 }
-
-?>
