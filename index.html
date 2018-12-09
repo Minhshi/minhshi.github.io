@@ -164,10 +164,23 @@
   <!-- <div class="row"> -->
     <!-- <div class="col-sm-6 col-sm-offset-3"> -->
 
-      <form role="form" id="contactForm">
+            <!-- <form role="form" id="contactForm"> -->
+
+      <!--   <form role="form" id="contactForm" method="POST" action="https://formspree.io/hello@minhpham.me">
+          <div class="form-group">
+            <input type="name" name="name" placeholder="Your name">
+          </div>
+          <div class="form-group">
+           <input type="email" name="email" placeholder="Your email">
+         </div>
+         <div class="form-group">
+          <textarea name="message" placeholder="Your message"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+ -->
         <!-- <div class="row"> -->
 
-          <div class="form-group col-6">
+        <!--   <div class="form-group col-6">
             <label for="name" class="h4">Name</label>
             <input type="text" class="form-control" id="name" placeholder="Enter name" required>
           </div>
@@ -182,15 +195,28 @@
             <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
           </div>
 
-          <button type="submit" id="form-submit" class="btn btn-success ">Submit</button>
+          <button type="submit" id="form-submit" class="btn btn-success ">Submit</button> -->
 
           <!-- <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div> -->
         <!-- </div> -->
-      </form>
+      <!-- </form> -->
     <!-- </div> -->
   <!-- </div> -->
 
+<form id="contactform" class="contact-form text-center" role="form">
+    <!-- IF MAIL SENT SUCCESSFULLY -->
+    <h6 class="success">
+        <span class="olored-text icon_check"></span> Your message has been sent successfully.</h6>
 
+    <!-- IF MAIL SENDING UNSUCCESSFULL -->
+    <h6 class="error">
+        <span class="colored-text icon_error-circle_alt"></span> E-mail must be valid.</h6>
+
+    <input id="cf-name" type="text" name="cf-name" placeholder="Your Name">
+    <input id="cf-email" type="email" name="cf-email" placeholder="Your Email">
+    <input id="cf-message" type="text" rows="7" name="cf-message" placeholder="Your Message">
+    <input type="submit" class="button alt" value="Submit" id="submit" name="submit" data-style="expand-left"/>
+</form>
 
 </div>
 
