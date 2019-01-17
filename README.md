@@ -8,7 +8,7 @@
     <th>Features</th>
   </tr>
   <tr>
-    <td><img src="https://res.cloudinary.com/dmadox5xe/image/upload/v1547728514/Profile/screencapture-minhpham-me-2019-01-17-13_34_55.png" alt=""></td>
+    <td><img src="https://res.cloudinary.com/dmadox5xe/image/upload/c_scale,w_500/v1547728514/Profile/screencapture-minhpham-me-2019-01-17-13_34_55.png" alt=""></td>
     <td>
       <ul>
         <li>About me</li>
