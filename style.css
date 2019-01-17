@@ -234,3 +234,7 @@ figure.pic1 {
 .footer-links a:hover {
   color: #E91E63;
 }
+.carousel-item a {
+  text-decoration: none;
+  color: white;
+}
