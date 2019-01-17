@@ -19,8 +19,8 @@
   text-align: center;
 }
 .profile {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
 }
 .ducky {
   widows: 100px;
@@ -40,11 +40,11 @@ ul {
   color: #E91E63;
 }
 .content1 {
-  margin-top: 100px;
+  /*margin-top: 100px;*/
 }
 
 #background figure {
-  float: left;
+  float: right;
   position: relative;
   background-color: white;
   text-align: center;
@@ -54,15 +54,15 @@ ul {
   font-family: 'Gloria Hallelujah', cursive;
 }
 figure.pic2 {
-  -webkit-transform : rotate(-15deg);
+  -webkit-transform : rotate(15deg);
   z-index: 1;
 }
 figure.pic1 {
-  -webkit-transform : rotate(15deg);
+  -webkit-transform : rotate(-15deg);
   z-index:1;
 }
 .pic2 {
-  margin-top: 75px;
+  /*margin-top: 75px;*/
 }
 #background figure:hover {
   box-shadow: 5px 10px 100px black;
@@ -72,7 +72,7 @@ figure.pic1 {
 .btn-see-more {
   /*margin-left: 140px;*/
   /*margin-top: 50px;*/
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   width: 900px;
